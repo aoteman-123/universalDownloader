@@ -10,7 +10,7 @@ async function downloadTwmateData(twitterUrl) {
         accept: "*/*",
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         "x-requested-with": "XMLHttpRequest",
-        referer: "https://twmate.com/",
+        referer: "https://twmate.com/en2/",
         "user-agent": "Mozilla/5.0",
       },
     });
