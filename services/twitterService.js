@@ -5,12 +5,12 @@ async function downloadTwmateData(twitterUrl) {
   const formData = `page=${encodeURIComponent(twitterUrl)}&ftype=all&ajax=1`;
 
   try {
-    const { data } = await axios.post("https://twmate.com/", formData, {
+    const { data } = await axios.post("https://twmate.com/en2/", formData, {
       headers: {
         accept: "*/*",
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         "x-requested-with": "XMLHttpRequest",
-        referer: "https://twmate.com/en2/",
+        referer: "https://twmate.com/",
         "user-agent": "Mozilla/5.0",
       },
     });
